@@ -37,6 +37,7 @@ Home Dionaea:   http://dionaea.carnivore.it/
 	
 	nodejs:
 		sudo apt-get install nodejs
+		sudo apt-get install npm
 		sudo ln -s "$(which nodejs)" /usr/bin/node
 	
 	npm install -g less
