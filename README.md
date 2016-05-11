@@ -10,7 +10,7 @@ Home Dionaea:   http://dionaea.carnivore.it/
 [*] Technologies:
 
   - Python 2.7.3
-  - Django 1.4
+  - Django 1.4 (1.8.11 tested working)
   - Jquery 1.7.2
   - Bootstrap Framework 2.1.1
   - jVectorMap 1.0
@@ -36,14 +36,11 @@ Home Dionaea:   http://dionaea.carnivore.it/
 		python setup.py install
 	
 	nodejs:
-		http://nodejs.org/dist/v0.8.16/node-v0.10.33.tar.gz
-		tar xzvf node-v0.10.33.tar.gz
-		cd node-v0.10.33
-		./configure
-		make
-		make install
+		sudo apt-get install nodejs
+		sudo ln -s "$(which nodejs)" /usr/bin/node
 	
 	npm install -g less
+	npm install -g promise
 	apt-get install python-netaddr
 
 [*] Install
