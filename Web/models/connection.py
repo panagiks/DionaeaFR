@@ -13,7 +13,7 @@ from django.db import models
 
 gi = pygeoip.GeoIP(
     os.path.join(
-        '/opt/DionaeaFR/static',
+        '/opt/DionaeaFR/DionaeaFR/static',
         'GeoIP.dat'
     ),
     pygeoip.MEMORY_CACHE
