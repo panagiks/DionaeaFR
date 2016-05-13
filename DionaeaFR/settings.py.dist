@@ -1,7 +1,8 @@
 # Django settings for DionaeaFR project.
 import os
 
-CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
+#CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
+CURRENT_PATH = os.path.abspath('/opt/DionaeaFR')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -70,6 +71,7 @@ MEDIA_URL = '/media/'
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = os.path.abspath(os.path.join(os.path.join(CURRENT_PATH, os.pardir), 'static'))
+#STATIC_ROOT = '/opt/DionaeaFR/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -78,6 +80,7 @@ STATIC_URL = '/static/'
 # Additional locations of static files
 STATICFILES_DIRS = (
     os.path.join(CURRENT_PATH, 'static'),
+    #'/opt/DionaeaFR/static',
 )
 
 # List of finder classes that know how to find static files in
@@ -148,6 +151,7 @@ WSGI_APPLICATION = 'DionaeaFR.wsgi.application'
 
 TEMPLATE_DIRS = (
     os.path.join(CURRENT_PATH, 'Templates'),
+    #'/opt/DionaeaFR/DionaeaFR/Templates',
 )
 
 COMPRESS_PRECOMPILERS = (
