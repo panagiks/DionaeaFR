@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf-8')
 
 gi = pygeoip.GeoIP(
     os.path.join(
-        '/opt/DionaeaFR/static',
+        '/opt/DionaeaFR/DionaeaFR/static',
         'GeoIP.dat'
     ),
     pygeoip.MEMORY_CACHE
@@ -30,7 +30,7 @@ gi = pygeoip.GeoIP(
 
 gic = pygeoip.GeoIP(
     os.path.join(
-        '/opt/DionaeaFR/static',
+        '/opt/DionaeaFR/DionaeaFR/static',
         'GeoLiteCity.dat'
     ),
     pygeoip.STANDARD
